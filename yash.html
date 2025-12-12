@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* MAIN CONTAINER — THIS MAKES BOTH MOVE SIDE BY SIDE */
+        .main-container {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin: 30px;
+        }
+
+        /* OUTER CARD (LEFT BLOCK MODEL) */
+        .block-model {
+            display: flex;
+            flex-direction: column;
+            width: 85px;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: white;
+            border: 3px solid rgb(0, 136, 255);
+            box-shadow: 0px 8px 15px rgba(30,144,255,0.4);
+            
+        }
+        
+
+        /* OUTER CARD (RIGHT INLINE MODEL) */
+        .inline-model {
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: white;
+            border: 3px solid rgb(4, 150, 241);
+            box-shadow: 0px 8px 15px rgba(3, 112, 255, 0.4);
+            gap: 15px
+
+        }
+
+        /* INNER BOX STYLE */
+        .box {
+            background-color: white;
+            padding: 19px;
+            margin: 15px 0;
+            width: 60%;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid dodgerblue;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- LEFT BLOCK MODEL -->
+        <div>
+            <h2>Block Model</h2>
+            <div class="block-model">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+                <div class="box">Box 4</div>
+            </div>
+        </div>
+
+        <!-- RIGHT INLINE MODEL -->
+        <div>
+            <h2>Inline Model</h2>
+            <div class="inline-model">
+                <div class="box">Box 5</div>
+                <div class="box">Box 6</div>
+                <div class="box">Box 7</div>
+                <div class="box">Box 8</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    border: 2px solid rgb(4, 163, 255);
+}
+.box{
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #4fa3ff;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 4px 10px #8dc6ff;
+
+}
+.circle{
+        width: 65px;
+    height: 65px;
+    background: #1e90ff;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
